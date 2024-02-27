@@ -1,0 +1,4429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1600</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1600</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>21</red>
+        <green>25</green>
+        <blue>31</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>127</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>21</red>
+        <green>25</green>
+        <blue>31</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>21</red>
+        <green>25</green>
+        <blue>31</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="128">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>21</red>
+        <green>25</green>
+        <blue>31</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>127</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>21</red>
+        <green>25</green>
+        <blue>31</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>21</red>
+        <green>25</green>
+        <blue>31</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="128">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>127</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>21</red>
+        <green>25</green>
+        <blue>31</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>127</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>170</green>
+        <blue>170</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>127</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>127</red>
+        <green>127</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>21</red>
+        <green>25</green>
+        <blue>31</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>21</red>
+        <green>25</green>
+        <blue>31</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="128">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>Solid Care</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../assets/app logog .png</normaloff>../assets/app logog .png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color : #15191f; 
+font: 600 9pt &quot;Bahnschrift SemiBold&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1601</width>
+      <height>901</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>100</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777214</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">*{
+border : none ; 
+padding : 0 ; 
+margin : 0 ; 
+background : none ; 
+color : #ebedee  ; 
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="login_page">
+     <property name="styleSheet">
+      <string notr="true">#login_page{
+background-image :url(:/assets/loginBk.png) ;
+}</string>
+     </property>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>140</y>
+        <width>331</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size : 40px ; 
+color : #4d8bf2 ; 
+</string>
+      </property>
+      <property name="text">
+       <string>Here you can login</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ad_login">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>310</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border : 1px solid #3a3e44 ; 
+border-radius : 5px; 
+padding-left : 5% ; 
+font-size : 15px ; 
+background-color : #1f2329 ; 
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="pas_login">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>420</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border : 1px solid #3a3e44 ; 
+border-radius : 5px; 
+padding-left : 5% ; 
+font-size : 15px ; 
+background-color : #1f2329 ; 
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="loginButton">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>550</y>
+        <width>331</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#loginButton {
+    border: 1px solid #4d8bf2;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #4d8bf2 ; 
+}
+
+#loginButton:hover {
+background-color: #007ea7;
+border: 1px solid #007ea7; 
+}</string>
+      </property>
+      <property name="text">
+       <string>LOGIN</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>18</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="quitButton">
+      <property name="geometry">
+       <rect>
+        <x>1550</x>
+        <y>850</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#quitButton{
+border : 1px solid white ; 
+border-radius : 15px;
+background-color : #15191f ;
+} 
+#quitButton:hover{
+background-color : #20242b ;  
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../assets/icons/power.svg</normaloff>../assets/icons/power.svg</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>210</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size : 20px ; 
+color : #73767b ; 
+</string>
+      </property>
+      <property name="text">
+       <string>let's join us :)</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>280</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size : 15px ; 
+color : #73767b ; 
+</string>
+      </property>
+      <property name="text">
+       <string>Email or CIN</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>390</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size : 15px ; 
+color : #73767b ; 
+</string>
+      </property>
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>500</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size : 15px ; 
+color : #73767b ; 
+</string>
+      </property>
+      <property name="text">
+       <string>Who are you ? </string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="adminRadioButton">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>500</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>admin</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="secretaryRadioButton">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>500</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>physiotherapy</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>71</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>45</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">max-height : 45px ; 
+margin-right : 9px ; </string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../assets/solid care white version.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="resetButton">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>620</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#resetButton {
+font-size : 15px ; 
+color : #73767b ; 
+}
+#resetButton:hover {
+text-decoration: underline;
+}</string>
+      </property>
+      <property name="text">
+       <string>Forgot your password ? </string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="home_page">
+     <property name="styleSheet">
+      <string notr="true">#home_page{
+background-color : #15191f ; 
+}</string>
+     </property>
+     <widget class="QWidget" name="SideMenu" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>161</width>
+        <height>900</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#SideMenu{
+background-color : #0c0e12 ;
+}
+#SideMenu QPushButton{
+text-align : left ; 
+padding  : 8px 10px ; 
+border-top-left-radius : 10px ;
+border-bottom-left-radius : 10px ; 
+}
+#SideMenu QPushButton:hover {
+    background-color: #15191f ; 
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">max-height : 45px ; 
+margin-right : 9px ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../assets/solid care white version.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame1" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>131</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="home">
+            <property name="styleSheet">
+             <string notr="true">#home{
+background-color : #15191f ; 
+}</string>
+            </property>
+            <property name="text">
+             <string>  HOME</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/home.svg</normaloff>../assets/icons/home.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clients">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PATIENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="employees">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PHYSIOTHERAPIES</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="appointements">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  APPOINTMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/calendar.svg</normaloff>../assets/icons/calendar.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="treatments">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  TREATMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/activity.svg</normaloff>../assets/icons/activity.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="stock">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  EQUIPMENT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/layers.svg</normaloff>../assets/icons/layers.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>140</width>
+           <height>318</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame2" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="settings">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  SETTINGS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/settings.svg</normaloff>../assets/icons/settings.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="about_us">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  ABOUT US</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/info.svg</normaloff>../assets/icons/info.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="logout">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  LOG OUT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/log-out.svg</normaloff>../assets/icons/log-out.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>120</y>
+        <width>941</width>
+        <height>791</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../assets/homePic.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>10</y>
+        <width>1421</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color : #1B2028 ;
+border-radius : 5px ; </string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="patient_page">
+     <property name="styleSheet">
+      <string notr="true">#patient_page{
+background-color : #dee2e6 ; 
+}</string>
+     </property>
+     <widget class="QWidget" name="SideMenu_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>161</width>
+        <height>900</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#SideMenu_2{
+background-color : #0c0e12 ;
+}
+#SideMenu_2 QPushButton{
+text-align : left ; 
+padding  : 8px 10px ; 
+border-top-left-radius : 10px ;
+border-bottom-left-radius : 10px ; 
+}
+#SideMenu_2 QPushButton:hover {
+   background-color : #2c9cf6;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">max-height : 45px ; 
+margin-right : 9px ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../assets/solid care white version.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame2_1" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>131</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_19">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="home_2">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  HOME</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/home.svg</normaloff>../assets/icons/home.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clients_2">
+            <property name="styleSheet">
+             <string notr="true">#clients_2{
+background-color : #2c9cf6;
+}</string>
+            </property>
+            <property name="text">
+             <string>  PATIENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="employees_2">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PHYSIOTHERAPIES</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="appointements_2">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  APPOINTMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/calendar.svg</normaloff>../assets/icons/calendar.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="treatments_2">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  TREATMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/activity.svg</normaloff>../assets/icons/activity.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="stock_2">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  EQUIPMENT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/layers.svg</normaloff>../assets/icons/layers.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>140</width>
+           <height>318</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame2_2" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="settings_2">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  SETTINGS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/settings.svg</normaloff>../assets/icons/settings.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="about_us_2">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  ABOUT US</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/info.svg</normaloff>../assets/icons/info.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="logout_2">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  LOG OUT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/log-out.svg</normaloff>../assets/icons/log-out.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QStackedWidget" name="patient_operations">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>80</y>
+        <width>1421</width>
+        <height>811</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color :white ;
+border : 1px solid white ;
+border-radius:10px ;
+
+
+</string>
+      </property>
+      <widget class="QWidget" name="list">
+       <property name="styleSheet">
+        <string notr="true">#list QPushButton:hover {
+    background-color: white ; 
+}</string>
+       </property>
+       <widget class="QTableView" name="clients_table">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>1375</width>
+          <height>611</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView {
+	background-color : #eff7f6 ; 
+    color: black;
+    font: 12px;
+}
+QHeaderView::section {
+    background-color: #1B2028;
+    color: white;
+    height: 30px;
+    font: 15px;
+}
+QHeaderView::section:first {
+    border-top-left-radius: 5px;
+}
+QHeaderView::section:last {
+    border-top-right-radius: 5px;
+}
+QScrollBar:vertical {
+    background: #dee2e6;
+}
+ QScrollBar::handle:vertical {
+    background: #dee2e6;
+ }
+QScrollBar:horizontal {
+    background: #dee2e6;
+}
+ QScrollBar::handle:horizontal {
+    background: #dee2e6;
+ }
+</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustToContents</enum>
+        </property>
+        <property name="showGrid">
+         <bool>false</bool>
+        </property>
+        <property name="gridStyle">
+         <enum>Qt::NoPen</enum>
+        </property>
+        <property name="sortingEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+        <property name="cornerButtonEnabled">
+         <bool>false</bool>
+        </property>
+        <attribute name="horizontalHeaderCascadingSectionResizes">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderMinimumSectionSize">
+         <number>196</number>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>196</number>
+        </attribute>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderCascadingSectionResizes">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderMinimumSectionSize">
+         <number>40</number>
+        </attribute>
+        <attribute name="verticalHeaderDefaultSectionSize">
+         <number>40</number>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>231</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border : 1px solid #455266 ; 
+border-radius : 6px ;</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QLineEdit" name="all_search_in">
+         <property name="geometry">
+          <rect>
+           <x>9</x>
+           <y>5</y>
+           <width>191</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border : none ; 
+background-color : white ; 
+color : black ;  </string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Normal</enum>
+         </property>
+         <property name="placeholderText">
+          <string>search by id , name or first name </string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton">
+         <property name="geometry">
+          <rect>
+           <x>194</x>
+           <y>4</y>
+           <width>30</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border : none ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../assets/icons/search.svg</normaloff>../assets/icons/search.svg</iconset>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="updateButton">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>10</y>
+          <width>30</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#updateButton{
+background-color : #1B2028;
+border : 1px solid #455266 ; 
+border-radius : 15px ;
+} 
+#updateButton:hover{
+background-color : #2c9cf6 ;
+border : 1px solid #2c9cf6 ; 
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../assets/icons/edit.svg</normaloff>../assets/icons/edit.svg</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="addButton">
+        <property name="geometry">
+         <rect>
+          <x>295</x>
+          <y>10</y>
+          <width>30</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#addButton{
+background-color : #1B2028;
+border : 1px solid #455266 ; 
+border-radius : 15px ;
+} 
+#addButton:hover{
+background-color : #2c9cf6 ;
+border : 1px solid #2c9cf6 ; 
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../assets/icons/plus-circle.svg</normaloff>../assets/icons/plus-circle.svg</iconset>
+        </property>
+       </widget>
+       <widget class="QFrame" name="gender_stats_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>520</y>
+          <width>321</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::NoContextMenu</enum>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color : white ; 
+border : 1px solid white ; 
+border-radius: 10px;
+padding-left : 30px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+        </layout>
+       </widget>
+       <widget class="QFrame" name="gender_stats">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>330</y>
+          <width>971</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color : white ; 
+border : 1px solid white ; 
+border-radius: 10px;</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout"/>
+       </widget>
+       <widget class="QPushButton" name="deleteButton">
+        <property name="geometry">
+         <rect>
+          <x>533</x>
+          <y>10</y>
+          <width>30</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#deleteButton{
+background-color : #1B2028;
+border : 1px solid #455266 ; 
+border-radius : 15px ;
+} 
+#deleteButton:hover{
+background-color : #2c9cf6 ;
+border : 1px solid #2c9cf6 ; 
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../assets/icons/x-square.svg</normaloff>../assets/icons/x-square.svg</iconset>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="up_del_cin_in">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>12</y>
+          <width>161</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color : black ; 
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+padding : 5px; </string>
+        </property>
+       </widget>
+       <zorder>gender_stats</zorder>
+       <zorder>gender_stats_2</zorder>
+       <zorder>clients_table</zorder>
+       <zorder>groupBox_2</zorder>
+       <zorder>updateButton</zorder>
+       <zorder>addButton</zorder>
+       <zorder>deleteButton</zorder>
+       <zorder>up_del_cin_in</zorder>
+      </widget>
+      <widget class="QWidget" name="add">
+       <widget class="QLabel" name="label_38">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>120</y>
+          <width>641</width>
+          <height>621</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../assets/clients.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>110</y>
+          <width>471</width>
+          <height>631</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#groupBox_9{
+border : 2px solid #455266 ; 
+border-radius: 5px;
+}</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QPushButton" name="add_val">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>540</y>
+           <width>311</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#add_val{
+background-color : #1B2028;
+border : 1px solid #455266 ; 
+border-radius : 5px ;
+}
+#add_val:hover{
+background-color : #2c9cf6;
+border : 1px solid #2c9cf6; 
+} </string>
+         </property>
+         <property name="text">
+          <string>INSERT</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../assets/icons/user-plus.svg</normaloff>../assets/icons/user-plus.svg</iconset>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="cin_in">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>60</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ;
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>cin</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="gender_in">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>300</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ;  
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+padding : 5px; </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="email_in">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>420</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ; 
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>email </string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="importFileButton">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>470</y>
+           <width>131</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#importFileButton{
+background-color : #2A313D;
+border : 1px solid #455266 ; 
+border-radius : 11px ;
+} 
+#importFileButton:hover{
+background-color : #2c9cf6;
+border : 1px solid #2c9cf6; 
+} </string>
+         </property>
+         <property name="text">
+          <string>certificate</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="name_in">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>120</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ; 
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>name</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="phone_in">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>360</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ; 
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>phone number </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="firstname_in">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>180</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ; 
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>first name </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="dob_in">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>240</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ; 
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>date of birth </string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="cin_error">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>96</y>
+           <width>261</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : red ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="name_error">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>156</y>
+           <width>261</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : red ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="firstName_error">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>216</y>
+           <width>261</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : red ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="dob_error">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>276</y>
+           <width>261</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : red ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="phone_error">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>391</y>
+           <width>291</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : red ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="email_error">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>451</y>
+           <width>291</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : red ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_58">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>70</y>
+          <width>261</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color : #1B2028 ; 
+font-size : 40px ; </string>
+        </property>
+        <property name="text">
+         <string>Client Infos </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="backtolist">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#backtolist{
+border-radius : 20px;
+}
+#backtolist:hover{
+background-color : #2c9cf6;
+} </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../assets/icons/arrow-left.svg</normaloff>../assets/icons/arrow-left.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="update">
+       <widget class="QGroupBox" name="groupBox_10">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>110</y>
+          <width>471</width>
+          <height>631</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#groupBox_10{
+border : 2px solid #455266 ; 
+border-radius: 5px;
+}</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QPushButton" name="update_val">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>550</y>
+           <width>311</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#update_val{
+background-color : #1B2028;
+border : 1px solid #455266 ; 
+border-radius : 5px ;
+}
+#update_val:hover{
+background-color : #2c9cf6;
+border : 1px solid #2c9cf6; 
+} </string>
+         </property>
+         <property name="text">
+          <string>UPDATE</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../assets/icons/edit-3.svg</normaloff>../assets/icons/edit-3.svg</iconset>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="up_gender_in">
+         <property name="geometry">
+          <rect>
+           <x>107</x>
+           <y>310</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ; 
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+padding : 5px; </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="up_email_in">
+         <property name="geometry">
+          <rect>
+           <x>107</x>
+           <y>430</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ; 
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="up_importFileButton">
+         <property name="geometry">
+          <rect>
+           <x>177</x>
+           <y>490</y>
+           <width>121</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#up_importFileButton{
+background-color : #2A313D;
+border : 1px solid #455266 ; 
+border-radius : 11px ;
+} 
+#up_importFileButton:hover{
+background-color : #2c9cf6;
+border : 1px solid #2c9cf6; 
+} </string>
+         </property>
+         <property name="text">
+          <string>import</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="up_name_in">
+         <property name="geometry">
+          <rect>
+           <x>107</x>
+           <y>130</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ; 
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="up_phone_in">
+         <property name="geometry">
+          <rect>
+           <x>107</x>
+           <y>370</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ; 
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="up_first_name_in">
+         <property name="geometry">
+          <rect>
+           <x>107</x>
+           <y>190</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ; 
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="up_dob_in">
+         <property name="geometry">
+          <rect>
+           <x>107</x>
+           <y>250</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ; 
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="phone_error_2">
+         <property name="geometry">
+          <rect>
+           <x>107</x>
+           <y>405</y>
+           <width>291</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : red ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="up_cin_in">
+         <property name="geometry">
+          <rect>
+           <x>108</x>
+           <y>70</y>
+           <width>261</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color : black ; 
+border : 1px solid #455266 ; 
+border-radius : 5px ; 
+</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_39">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>70</y>
+          <width>261</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color : #1B2028 ; 
+font-size : 40px ; </string>
+        </property>
+        <property name="text">
+         <string>Update Form</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="backtolist_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#backtolist_2{
+border-radius : 20px;
+}
+#backtolist_2:hover{
+background-color : #2c9cf6;
+} </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../assets/icons/arrow-left.svg</normaloff>../assets/icons/arrow-left.svg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>110</y>
+          <width>851</width>
+          <height>671</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../assets/delete-client.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>10</y>
+        <width>1421</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color : white ;
+border-radius : 5px ; </string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="employees_page">
+     <property name="styleSheet">
+      <string notr="true">#employees_page{
+background-color : #15191f ; 
+}</string>
+     </property>
+     <widget class="QWidget" name="SideMenu_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>161</width>
+        <height>900</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#SideMenu_3{
+background-color : #0c0e12 ;
+}
+#SideMenu_3 QPushButton{
+text-align : left ; 
+padding  : 8px 10px ; 
+border-top-left-radius : 10px ;
+border-bottom-left-radius : 10px ; 
+}
+#SideMenu_3 QPushButton:hover {
+    background-color: #15191f ; 
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">max-height : 45px ; 
+margin-right : 9px ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../assets/solid care white version.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame3_1" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>131</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_20">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="home_3">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  HOME</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/home.svg</normaloff>../assets/icons/home.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clients_3">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PATIENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="employees_3">
+            <property name="styleSheet">
+             <string notr="true">#employees_3{
+background-color : #15191f ; 
+}</string>
+            </property>
+            <property name="text">
+             <string>  PHYSIOTHERAPIES</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="appointements_3">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  APPOINTMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/calendar.svg</normaloff>../assets/icons/calendar.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="treatments_3">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  TREATMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/activity.svg</normaloff>../assets/icons/activity.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="stock_3">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  EQUIPMENT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/layers.svg</normaloff>../assets/icons/layers.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>140</width>
+           <height>318</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame3_2" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="settings_3">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  SETTINGS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/settings.svg</normaloff>../assets/icons/settings.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="about_us_3">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  ABOUT US</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/info.svg</normaloff>../assets/icons/info.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="logout_3">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  LOG OUT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/log-out.svg</normaloff>../assets/icons/log-out.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="appointments_page">
+     <property name="styleSheet">
+      <string notr="true">#appointments_page{
+background-color : #15191f ; 
+}</string>
+     </property>
+     <widget class="QWidget" name="SideMenu_4" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>161</width>
+        <height>900</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#SideMenu_4{
+background-color : #0c0e12 ;
+}
+#SideMenu_4 QPushButton{
+text-align : left ; 
+padding  : 8px 10px ; 
+border-top-left-radius : 10px ;
+border-bottom-left-radius : 10px ; 
+}
+#SideMenu_4 QPushButton:hover {
+    background-color: #15191f ; 
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_23">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">max-height : 45px ; 
+margin-right : 9px ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../assets/solid care white version.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame4_1" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>131</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_21">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="home_4">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  HOME</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/home.svg</normaloff>../assets/icons/home.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clients_4">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PATIENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="employees_4">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PHYSIOTHERAPIES</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="appointements_4">
+            <property name="styleSheet">
+             <string notr="true">#appointements_4{
+background-color : #15191f ; 
+}</string>
+            </property>
+            <property name="text">
+             <string>  APPOINTMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/calendar.svg</normaloff>../assets/icons/calendar.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="treatments_4">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  TREATMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/activity.svg</normaloff>../assets/icons/activity.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="stock_4">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  EQUIPMENT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/layers.svg</normaloff>../assets/icons/layers.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>140</width>
+           <height>318</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame4_2" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_22">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="settings_4">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  SETTINGS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/settings.svg</normaloff>../assets/icons/settings.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="about_us_4">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  ABOUT US</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/info.svg</normaloff>../assets/icons/info.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="logout_4">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  LOG OUT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/log-out.svg</normaloff>../assets/icons/log-out.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="treatments_page">
+     <property name="styleSheet">
+      <string notr="true">#treatments_page{
+background-color : #15191f ; 
+}</string>
+     </property>
+     <widget class="QWidget" name="SideMenu_5" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>161</width>
+        <height>900</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#SideMenu_5{
+background-color : #0c0e12 ;
+}
+#SideMenu_5 QPushButton{
+text-align : left ; 
+padding  : 8px 10px ; 
+border-top-left-radius : 10px ;
+border-bottom-left-radius : 10px ; 
+}
+#SideMenu_5 QPushButton:hover {
+    background-color: #15191f ; 
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_23">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_27">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">max-height : 45px ; 
+margin-right : 9px ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../assets/solid care white version.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame5_1" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>131</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_24">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="home_5">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  HOME</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/home.svg</normaloff>../assets/icons/home.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clients_5">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PATIENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="employees_5">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PHYSIOTHERAPIES</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="appointements_5">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  APPOINTMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/calendar.svg</normaloff>../assets/icons/calendar.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="treatments_5">
+            <property name="styleSheet">
+             <string notr="true">#treatments_5{
+background-color : #15191f ; 
+}</string>
+            </property>
+            <property name="text">
+             <string>  TREATMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/activity.svg</normaloff>../assets/icons/activity.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="stock_5">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  EQUIPMENT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/layers.svg</normaloff>../assets/icons/layers.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_8">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>140</width>
+           <height>318</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame5_2" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_25">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="settings_5">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  SETTINGS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/settings.svg</normaloff>../assets/icons/settings.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="about_us_5">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  ABOUT US</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/info.svg</normaloff>../assets/icons/info.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="logout_5">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  LOG OUT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/log-out.svg</normaloff>../assets/icons/log-out.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="stock_page">
+     <property name="styleSheet">
+      <string notr="true">#stock_page{
+background-color : #15191f ; 
+}</string>
+     </property>
+     <widget class="QWidget" name="SideMenu_6" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>161</width>
+        <height>900</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#SideMenu_6{
+background-color : #0c0e12 ;
+}
+#SideMenu_6 QPushButton{
+text-align : left ; 
+padding  : 8px 10px ; 
+border-top-left-radius : 10px ;
+border-bottom-left-radius : 10px ; 
+}
+#SideMenu_6 QPushButton:hover {
+    background-color: #15191f ; 
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">max-height : 45px ; 
+margin-right : 9px ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../assets/solid care white version.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame6_1" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>131</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_26">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="home_6">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  HOME</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/home.svg</normaloff>../assets/icons/home.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clients_6">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PATIENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="employees_6">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PHYSIOTHERAPIES</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="appointements_6">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  APPOINTMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/calendar.svg</normaloff>../assets/icons/calendar.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="treatments_6">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  TREATMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/activity.svg</normaloff>../assets/icons/activity.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="stock_6">
+            <property name="styleSheet">
+             <string notr="true">#stock_6{
+background-color : #15191f ; 
+}</string>
+            </property>
+            <property name="text">
+             <string>  EQUIPMENT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/layers.svg</normaloff>../assets/icons/layers.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>140</width>
+           <height>318</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame6_2" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_12">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="settings_6">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  SETTINGS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/settings.svg</normaloff>../assets/icons/settings.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="about_us_6">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  ABOUT US</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/info.svg</normaloff>../assets/icons/info.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="logout_6">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  LOG OUT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/log-out.svg</normaloff>../assets/icons/log-out.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="settings_page">
+     <property name="styleSheet">
+      <string notr="true">#settings_page{
+background-color : #15191f ; 
+}</string>
+     </property>
+     <widget class="QWidget" name="SideMenu_7" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>161</width>
+        <height>900</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#SideMenu_7{
+background-color : #0c0e12 ;
+}
+#SideMenu_7 QPushButton{
+text-align : left ; 
+padding  : 8px 10px ; 
+border-top-left-radius : 10px ;
+border-bottom-left-radius : 10px ; 
+}
+#SideMenu_7 QPushButton:hover {
+    background-color: #15191f ; 
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_13">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">max-height : 45px ; 
+margin-right : 9px ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../assets/solid care white version.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame7_1" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>131</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_27">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="home_7">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  HOME</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/home.svg</normaloff>../assets/icons/home.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clients_7">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PATIENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="employees_7">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PHYSIOTHERAPIES</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="appointements_7">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  APPOINTMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/calendar.svg</normaloff>../assets/icons/calendar.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="treatments_7">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  TREATMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/activity.svg</normaloff>../assets/icons/activity.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="stock_7">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  EQUIPMENT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/layers.svg</normaloff>../assets/icons/layers.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>140</width>
+           <height>318</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame7_2" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="settings_7">
+            <property name="styleSheet">
+             <string notr="true">#settings_7{
+background-color : #15191f ;
+} </string>
+            </property>
+            <property name="text">
+             <string>  SETTINGS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/settings.svg</normaloff>../assets/icons/settings.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="about_us_7">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  ABOUT US</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/info.svg</normaloff>../assets/icons/info.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="logout_7">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  LOG OUT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/log-out.svg</normaloff>../assets/icons/log-out.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="about_us_page">
+     <property name="styleSheet">
+      <string notr="true">#about_us_page{
+background-color : #15191f ; 
+}</string>
+     </property>
+     <widget class="QWidget" name="SideMenu_8" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>161</width>
+        <height>900</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>161</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>CrossCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#SideMenu_8{
+background-color : #0c0e12 ;
+}
+#SideMenu_8 QPushButton{
+text-align : left ; 
+padding  : 8px 10px ; 
+border-top-left-radius : 10px ;
+border-bottom-left-radius : 10px ; 
+}
+#SideMenu_8 QPushButton:hover {
+    background-color: #15191f ; 
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_16">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>61</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">max-height : 45px ; 
+margin-right : 9px ; </string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../assets/solid care white version.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame8_1" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>131</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_28">
+          <property name="spacing">
+           <number>6</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="home_8">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  HOME</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/home.svg</normaloff>../assets/icons/home.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clients_8">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PATIENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="employees_8">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  PHYSIOTHERAPIES</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/users.svg</normaloff>../assets/icons/users.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="appointements_8">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  APPOINTMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/calendar.svg</normaloff>../assets/icons/calendar.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="treatments_8">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  TREATMENTS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/activity.svg</normaloff>../assets/icons/activity.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="stock_8">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  EQUIPMENT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/layers.svg</normaloff>../assets/icons/layers.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>140</width>
+           <height>318</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="frame8_2" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="settings_8">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  SETTINGS</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/settings.svg</normaloff>../assets/icons/settings.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="about_us_8">
+            <property name="styleSheet">
+             <string notr="true">#about_us_8{
+background-color : #15191f ;
+} </string>
+            </property>
+            <property name="text">
+             <string>  ABOUT US</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/info.svg</normaloff>../assets/icons/info.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="logout_8">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>  LOG OUT</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/log-out.svg</normaloff>../assets/icons/log-out.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
