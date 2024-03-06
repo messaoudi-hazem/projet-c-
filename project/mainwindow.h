@@ -32,7 +32,6 @@ private slots:
 
     void on_clients_clicked();
 
-    void on_employees_clicked();
 
     void on_appointements_clicked();
 
@@ -50,7 +49,6 @@ private slots:
 
     void on_clients_2_clicked();
 
-    void on_employees_2_clicked();
 
     void on_appointements_2_clicked();
 
@@ -68,7 +66,6 @@ private slots:
 
     void on_clients_3_clicked();
 
-    void on_employees_3_clicked();
 
     void on_appointements_3_clicked();
 
@@ -86,7 +83,6 @@ private slots:
 
     void on_clients_4_clicked();
 
-    void on_employees_4_clicked();
 
     void on_appointements_4_clicked();
 
@@ -104,7 +100,6 @@ private slots:
 
     void on_clients_5_clicked();
 
-    void on_employees_5_clicked();
 
     void on_appointements_5_clicked();
 
@@ -122,7 +117,6 @@ private slots:
 
     void on_clients_6_clicked();
 
-    void on_employees_6_clicked();
 
     void on_appointements_6_clicked();
 
@@ -140,7 +134,6 @@ private slots:
 
     void on_clients_7_clicked();
 
-    void on_employees_7_clicked();
 
     void on_appointements_7_clicked();
 
@@ -158,7 +151,6 @@ private slots:
 
     void on_clients_8_clicked();
 
-    void on_employees_8_clicked();
 
     void on_appointements_8_clicked();
 
@@ -178,7 +170,6 @@ private slots:
 
     void on_update_val_clicked();
 
-    void on_importFileButton_clicked();
 
     //void on_certificate_select_clicked();
 
@@ -188,15 +179,11 @@ private slots:
 
     void on_export_to_txt_clicked();
 
-    void on_up_importFileButton_clicked();
 
-    void on_refresh_clicked();
 
     void on_all_search_in_textChanged();
 
-    void on_gender_filter_activated();
 
-    void on_sort_filter_activated();
 
     void on_addButton_clicked();
 
@@ -208,29 +195,9 @@ private slots:
 
     void on_deleteButton_clicked();
 
-    void on_download_cer_clicked();
 
-    void on_add_val_emp_clicked();
 
-    void on_addButton_emp_clicked();
 
-    void on_backtolist_emp_clicked();
-
-    void on_updateButton_emp_clicked();
-
-    void on_backtolist_4_clicked();
-
-    void on_deleteButton_emp_clicked();
-
-    void on_export_to_exel_emp_clicked();
-
-    void on_export_to_pdf_emp_clicked();
-
-    void on_export_to_txt_emp_clicked();
-
-    void on_update_val_emp_clicked();
-
-    void on_backtolist_emp4_clicked();
 
 private:
     Ui::MainWindow *ui;

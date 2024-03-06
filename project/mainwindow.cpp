@@ -53,10 +53,6 @@ void MainWindow::on_clients_clicked()
     ui->stackedWidget->setCurrentWidget(ui->patient_page);
 }
 
-void MainWindow::on_employees_clicked()
-{
-    ui->stackedWidget->setCurrentWidget(ui->employees_page);
-}
 void MainWindow::on_appointements_clicked()
 {
     ui->stackedWidget->setCurrentWidget(ui->appointments_page);
@@ -97,10 +93,6 @@ void MainWindow::on_clients_2_clicked()
     ui->stackedWidget->setCurrentWidget(ui->patient_page);
 }
 
-void MainWindow::on_employees_2_clicked()
-{
-    ui->stackedWidget->setCurrentWidget(ui->employees_page);
-}
 void MainWindow::on_appointements_2_clicked()
 {
     ui->stackedWidget->setCurrentWidget(ui->appointments_page);
@@ -139,11 +131,6 @@ void MainWindow::on_home_3_clicked()
 void MainWindow::on_clients_3_clicked()
 {
     ui->stackedWidget->setCurrentWidget(ui->patient_page);
-}
-
-void MainWindow::on_employees_3_clicked()
-{
-    ui->stackedWidget->setCurrentWidget(ui->employees_page);
 }
 
 
@@ -187,11 +174,6 @@ void MainWindow::on_clients_4_clicked()
     ui->stackedWidget->setCurrentWidget(ui->patient_page);
 }
 
-void MainWindow::on_employees_4_clicked()
-{
-    ui->stackedWidget->setCurrentWidget(ui->employees_page);
-}
-
 
 void MainWindow::on_appointements_4_clicked()
 {
@@ -231,11 +213,6 @@ void MainWindow::on_home_5_clicked()
 void MainWindow::on_clients_5_clicked()
 {
     ui->stackedWidget->setCurrentWidget(ui->patient_page);
-}
-
-void MainWindow::on_employees_5_clicked()
-{
-    ui->stackedWidget->setCurrentWidget(ui->employees_page);
 }
 
 
@@ -279,11 +256,6 @@ void MainWindow::on_clients_6_clicked()
     ui->stackedWidget->setCurrentWidget(ui->patient_page);
 }
 
-void MainWindow::on_employees_6_clicked()
-{
-    ui->stackedWidget->setCurrentWidget(ui->employees_page);
-}
-
 
 void MainWindow::on_appointements_6_clicked()
 {
@@ -325,10 +297,6 @@ void MainWindow::on_clients_7_clicked()
     ui->stackedWidget->setCurrentWidget(ui->patient_page);
 }
 
-void MainWindow::on_employees_7_clicked()
-{
-    ui->stackedWidget->setCurrentWidget(ui->employees_page);
-}
 
 
 void MainWindow::on_appointements_7_clicked()
@@ -371,10 +339,6 @@ void MainWindow::on_clients_8_clicked()
     ui->stackedWidget->setCurrentWidget(ui->patient_page);
 }
 
-void MainWindow::on_employees_8_clicked()
-{
-    ui->stackedWidget->setCurrentWidget(ui->employees_page);
-}
 
 
 void MainWindow::on_appointements_8_clicked()

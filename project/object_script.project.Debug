@@ -1,12 +1,8 @@
 INPUT(
 ./debug\client.o
 ./debug\connexion.o
-./debug\dialog.o
-./debug\employe.o
 ./debug\main.o
 ./debug\mainwindow.o
-./debug\treatment.o
 ./debug\qrc_ressources.o
-./debug\moc_dialog.o
 ./debug\moc_mainwindow.o
 );
