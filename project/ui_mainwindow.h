@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QComboBox>
+#include <QtWidgets/QDateEdit>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
@@ -91,6 +92,9 @@ public:
     QStackedWidget *patient_operations;
     QWidget *list;
     QTableView *clients_table;
+    QPushButton *export_to_txt;
+    QPushButton *export_to_pdf;
+    QPushButton *export_to_exel;
     QGroupBox *groupBox_2;
     QLineEdit *all_search_in;
     QPushButton *pushButton;
@@ -98,8 +102,6 @@ public:
     QPushButton *addButton;
     QFrame *gender_stats_2;
     QHBoxLayout *horizontalLayout_2;
-    QFrame *gender_stats;
-    QHBoxLayout *horizontalLayout;
     QPushButton *deleteButton;
     QComboBox *up_del_cin_in;
     QWidget *add;
@@ -138,6 +140,8 @@ public:
     QPushButton *backtolist_2;
     QLabel *label_16;
     QGroupBox *groupBox_6;
+    QLineEdit *lineEdit;
+    QLineEdit *lineEdit_2;
     QWidget *employees_page;
     QWidget *SideMenu_3;
     QVBoxLayout *verticalLayout_7;
@@ -156,6 +160,73 @@ public:
     QPushButton *settings_3;
     QPushButton *about_us_3;
     QPushButton *logout_3;
+    QStackedWidget *employer_operations;
+    QWidget *list_emp;
+    QTableView *employees_table;
+    QGroupBox *groupBox_3;
+    QLineEdit *all_search_in_2;
+    QPushButton *pushButton_2;
+    QPushButton *updateButton_emp;
+    QPushButton *addButton_emp;
+    QPushButton *deleteButton_emp;
+    QComboBox *up_del_cin_in_emp;
+    QPushButton *download_dip;
+    QPushButton *export_to_pdf_emp;
+    QPushButton *export_to_txt_emp;
+    QPushButton *export_to_exel_emp;
+    QGroupBox *groupBox_17;
+    QLabel *label_52;
+    QLabel *label_56;
+    QLabel *females_nbr_2;
+    QGroupBox *groupBox_18;
+    QLabel *label_53;
+    QLabel *label_54;
+    QLabel *males_nbr_2;
+    QPushButton *refresh_2;
+    QComboBox *sort_filter_2;
+    QComboBox *gender_filter_emp;
+    QRadioButton *asc_2;
+    QRadioButton *dsc_2;
+    QWidget *add_emp;
+    QLabel *label_40;
+    QGroupBox *groupBox_11;
+    QPushButton *add_val_emp;
+    QLineEdit *cin_in_emp;
+    QComboBox *gender_in_emp;
+    QLineEdit *email_in_emp;
+    QPushButton *diplome_import;
+    QLineEdit *lastname_in_emp;
+    QLineEdit *phone_in_emp;
+    QLineEdit *firstname_in_emp;
+    QLineEdit *function_in_emp;
+    QLineEdit *password_in_emp;
+    QLineEdit *salaire_in_emp;
+    QLabel *SecretQuestion;
+    QLineEdit *secret_in_emp;
+    QDateEdit *date_in_emp;
+    QLabel *label_59;
+    QPushButton *backtolist_emp;
+    QWidget *update_emp;
+    QGroupBox *groupBox_12;
+    QPushButton *update_val_emp;
+    QComboBox *up_gender_in_emp;
+    QLineEdit *up_email_in_emp;
+    QPushButton *up_importFileButton_emp;
+    QLineEdit *up_phone_in_emp;
+    QLineEdit *up_first_name_in_emp;
+    QLabel *phone_error_4;
+    QLineEdit *up_cin_in_emp;
+    QLineEdit *up_salaire_in_emp;
+    QLineEdit *up_fonction_in_emp;
+    QLineEdit *up_last_name_in_emp;
+    QLineEdit *up_diplom_in_emp;
+    QDateEdit *up_date_in_emp;
+    QLabel *label_41;
+    QPushButton *backtolist_emp4;
+    QLabel *label_17;
+    QGroupBox *groupBox_7;
+    QLineEdit *lineEdit_3;
+    QLineEdit *lineEdit_4;
     QWidget *appointments_page;
     QWidget *SideMenu_4;
     QVBoxLayout *verticalLayout_8;
@@ -778,7 +849,7 @@ public:
 "}"));
         clients_table = new QTableView(list);
         clients_table->setObjectName(QStringLiteral("clients_table"));
-        clients_table->setGeometry(QRect(20, 60, 1375, 611));
+        clients_table->setGeometry(QRect(20, 60, 1375, 631));
         clients_table->setMinimumSize(QSize(0, 0));
         clients_table->setStyleSheet(QLatin1String("QTableView {\n"
 "	background-color : #eff7f6 ; \n"
@@ -831,6 +902,47 @@ public:
         clients_table->verticalHeader()->setMinimumSectionSize(40);
         clients_table->verticalHeader()->setProperty("showSortIndicator", QVariant(false));
         clients_table->verticalHeader()->setStretchLastSection(false);
+        export_to_txt = new QPushButton(list);
+        export_to_txt->setObjectName(QStringLiteral("export_to_txt"));
+        export_to_txt->setGeometry(QRect(1310, 5, 81, 41));
+        export_to_txt->setStyleSheet(QLatin1String("#export_to_txt{\n"
+"background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ;\n"
+"}\n"
+"#export_to_txt:hover{\n"
+"background-color : #2c9cf6;\n"
+"border : 1px solid #2c9cf6 ; \n"
+"} "));
+        QIcon icon10;
+        icon10.addFile(QStringLiteral("../assets/icons/file-text.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        export_to_txt->setIcon(icon10);
+        export_to_pdf = new QPushButton(list);
+        export_to_pdf->setObjectName(QStringLiteral("export_to_pdf"));
+        export_to_pdf->setGeometry(QRect(1220, 6, 81, 40));
+        export_to_pdf->setStyleSheet(QLatin1String("#export_to_pdf{\n"
+"background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ;\n"
+"} \n"
+"#export_to_pdf:hover{\n"
+"background-color : #2c9cf6 ;\n"
+"border : 1px solid #2c9cf6 ; \n"
+"}"));
+        export_to_pdf->setIcon(icon10);
+        export_to_exel = new QPushButton(list);
+        export_to_exel->setObjectName(QStringLiteral("export_to_exel"));
+        export_to_exel->setGeometry(QRect(1130, 7, 81, 40));
+        export_to_exel->setStyleSheet(QLatin1String("#export_to_exel{\n"
+"background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ;\n"
+"}\n"
+"#export_to_exel:hover{\n"
+"background-color : #2c9cf6;\n"
+"border : 1px solid #2c9cf6 ; \n"
+"} "));
+        export_to_exel->setIcon(icon10);
         groupBox_2 = new QGroupBox(list);
         groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
         groupBox_2->setGeometry(QRect(20, 10, 231, 31));
@@ -847,9 +959,9 @@ public:
         pushButton->setObjectName(QStringLiteral("pushButton"));
         pushButton->setGeometry(QRect(194, 4, 30, 23));
         pushButton->setStyleSheet(QStringLiteral("border : none ; "));
-        QIcon icon10;
-        icon10.addFile(QStringLiteral("../assets/icons/search.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton->setIcon(icon10);
+        QIcon icon11;
+        icon11.addFile(QStringLiteral("../assets/icons/search.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton->setIcon(icon11);
         updateButton = new QPushButton(list);
         updateButton->setObjectName(QStringLiteral("updateButton"));
         updateButton->setGeometry(QRect(500, 10, 30, 31));
@@ -862,9 +974,9 @@ public:
 "background-color : #2c9cf6 ;\n"
 "border : 1px solid #2c9cf6 ; \n"
 "}"));
-        QIcon icon11;
-        icon11.addFile(QStringLiteral("../assets/icons/edit.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        updateButton->setIcon(icon11);
+        QIcon icon12;
+        icon12.addFile(QStringLiteral("../assets/icons/edit.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        updateButton->setIcon(icon12);
         addButton = new QPushButton(list);
         addButton->setObjectName(QStringLiteral("addButton"));
         addButton->setGeometry(QRect(295, 10, 30, 31));
@@ -877,9 +989,9 @@ public:
 "background-color : #2c9cf6 ;\n"
 "border : 1px solid #2c9cf6 ; \n"
 "}"));
-        QIcon icon12;
-        icon12.addFile(QStringLiteral("../assets/icons/plus-circle.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        addButton->setIcon(icon12);
+        QIcon icon13;
+        icon13.addFile(QStringLiteral("../assets/icons/plus-circle.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        addButton->setIcon(icon13);
         gender_stats_2 = new QFrame(list);
         gender_stats_2->setObjectName(QStringLiteral("gender_stats_2"));
         gender_stats_2->setGeometry(QRect(10, 520, 321, 291));
@@ -896,14 +1008,6 @@ public:
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         horizontalLayout_2->setSizeConstraint(QLayout::SetDefaultConstraint);
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        gender_stats = new QFrame(list);
-        gender_stats->setObjectName(QStringLiteral("gender_stats"));
-        gender_stats->setGeometry(QRect(430, 330, 971, 471));
-        gender_stats->setStyleSheet(QLatin1String("background-color : white ; \n"
-"border : 1px solid white ; \n"
-"border-radius: 10px;"));
-        horizontalLayout = new QHBoxLayout(gender_stats);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         deleteButton = new QPushButton(list);
         deleteButton->setObjectName(QStringLiteral("deleteButton"));
         deleteButton->setGeometry(QRect(533, 10, 30, 31));
@@ -916,9 +1020,9 @@ public:
 "background-color : #2c9cf6 ;\n"
 "border : 1px solid #2c9cf6 ; \n"
 "}"));
-        QIcon icon13;
-        icon13.addFile(QStringLiteral("../assets/icons/x-square.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        deleteButton->setIcon(icon13);
+        QIcon icon14;
+        icon14.addFile(QStringLiteral("../assets/icons/x-square.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        deleteButton->setIcon(icon14);
         up_del_cin_in = new QComboBox(list);
         up_del_cin_in->setObjectName(QStringLiteral("up_del_cin_in"));
         up_del_cin_in->setGeometry(QRect(330, 12, 161, 28));
@@ -927,9 +1031,11 @@ public:
 "border-radius : 5px ; \n"
 "padding : 5px; "));
         patient_operations->addWidget(list);
-        gender_stats->raise();
         gender_stats_2->raise();
         clients_table->raise();
+        export_to_txt->raise();
+        export_to_pdf->raise();
+        export_to_exel->raise();
         groupBox_2->raise();
         updateButton->raise();
         addButton->raise();
@@ -961,9 +1067,9 @@ public:
 "background-color : #2c9cf6;\n"
 "border : 1px solid #2c9cf6; \n"
 "} "));
-        QIcon icon14;
-        icon14.addFile(QStringLiteral("../assets/icons/user-plus.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        add_val->setIcon(icon14);
+        QIcon icon15;
+        icon15.addFile(QStringLiteral("../assets/icons/user-plus.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        add_val->setIcon(icon15);
         cin_in = new QLineEdit(groupBox_9);
         cin_in->setObjectName(QStringLiteral("cin_in"));
         cin_in->setGeometry(QRect(100, 60, 261, 31));
@@ -1064,9 +1170,9 @@ public:
 "#backtolist:hover{\n"
 "background-color : #2c9cf6;\n"
 "} "));
-        QIcon icon15;
-        icon15.addFile(QStringLiteral("../assets/icons/arrow-left.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        backtolist->setIcon(icon15);
+        QIcon icon16;
+        icon16.addFile(QStringLiteral("../assets/icons/arrow-left.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        backtolist->setIcon(icon16);
         backtolist->setIconSize(QSize(30, 30));
         patient_operations->addWidget(add);
         update = new QWidget();
@@ -1090,9 +1196,9 @@ public:
 "background-color : #2c9cf6;\n"
 "border : 1px solid #2c9cf6; \n"
 "} "));
-        QIcon icon16;
-        icon16.addFile(QStringLiteral("../assets/icons/edit-3.svg"), QSize(), QIcon::Normal, QIcon::Off);
-        update_val->setIcon(icon16);
+        QIcon icon17;
+        icon17.addFile(QStringLiteral("../assets/icons/edit-3.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        update_val->setIcon(icon17);
         up_gender_in = new QComboBox(groupBox_10);
         up_gender_in->setObjectName(QStringLiteral("up_gender_in"));
         up_gender_in->setGeometry(QRect(107, 310, 261, 31));
@@ -1174,7 +1280,7 @@ public:
 "#backtolist_2:hover{\n"
 "background-color : #2c9cf6;\n"
 "} "));
-        backtolist_2->setIcon(icon15);
+        backtolist_2->setIcon(icon16);
         backtolist_2->setIconSize(QSize(30, 30));
         label_16 = new QLabel(update);
         label_16->setObjectName(QStringLiteral("label_16"));
@@ -1187,11 +1293,21 @@ public:
         groupBox_6->setGeometry(QRect(170, 10, 1421, 61));
         groupBox_6->setStyleSheet(QLatin1String("background-color : white ;\n"
 "border-radius : 5px ; "));
+        lineEdit = new QLineEdit(groupBox_6);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        lineEdit->setGeometry(QRect(20, 10, 41, 41));
+        lineEdit->setStyleSheet(QLatin1String("background-color : grey ; \n"
+"border-radius : 20px ; "));
+        lineEdit_2 = new QLineEdit(groupBox_6);
+        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(75, 21, 71, 20));
+        lineEdit_2->setStyleSheet(QLatin1String("color : black ; \n"
+"font-size : 15px;"));
         stackedWidget->addWidget(patient_page);
         employees_page = new QWidget();
         employees_page->setObjectName(QStringLiteral("employees_page"));
         employees_page->setStyleSheet(QLatin1String("#employees_page{\n"
-"background-color : #15191f ; \n"
+"	background-color : #eff7f6 ; \n"
 "}"));
         SideMenu_3 = new QWidget(employees_page);
         SideMenu_3->setObjectName(QStringLiteral("SideMenu_3"));
@@ -1324,6 +1440,564 @@ public:
 
         verticalLayout_7->addWidget(frame3_2);
 
+        employer_operations = new QStackedWidget(employees_page);
+        employer_operations->setObjectName(QStringLiteral("employer_operations"));
+        employer_operations->setGeometry(QRect(170, 80, 1421, 811));
+        employer_operations->setStyleSheet(QLatin1String("background-color :white ;\n"
+"border : 1px solid white ;\n"
+"border-radius:10px ;\n"
+"\n"
+"\n"
+""));
+        list_emp = new QWidget();
+        list_emp->setObjectName(QStringLiteral("list_emp"));
+        list_emp->setStyleSheet(QLatin1String("#list QPushButton:hover {\n"
+"    background-color: white ; \n"
+"}"));
+        employees_table = new QTableView(list_emp);
+        employees_table->setObjectName(QStringLiteral("employees_table"));
+        employees_table->setGeometry(QRect(14, 60, 1391, 631));
+        employees_table->setMinimumSize(QSize(0, 0));
+        employees_table->setStyleSheet(QLatin1String("QTableView {\n"
+"	background-color : #eff7f6 ; \n"
+"    color: black;\n"
+"    font: 12px;\n"
+"}\n"
+"QHeaderView::section {\n"
+"    background-color: #1B2028;\n"
+"    color: white;\n"
+"    height: 30px;\n"
+"    font: 15px;\n"
+"}\n"
+"QHeaderView::section:first {\n"
+"    border-top-left-radius: 5px;\n"
+"}\n"
+"QHeaderView::section:last {\n"
+"    border-top-right-radius: 5px;\n"
+"}\n"
+"QScrollBar:vertical {\n"
+"    background: #dee2e6;\n"
+"}\n"
+" QScrollBar::handle:vertical {\n"
+"    background: #dee2e6;\n"
+" }\n"
+"QScrollBar:horizontal {\n"
+"    background: #dee2e6;\n"
+"}\n"
+" QScrollBar::handle:horizontal {\n"
+"    background: #dee2e6;\n"
+" }\n"
+""));
+        employees_table->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+        employees_table->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+        employees_table->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContents);
+        employees_table->setShowGrid(false);
+        employees_table->setGridStyle(Qt::NoPen);
+        employees_table->setSortingEnabled(false);
+        employees_table->setWordWrap(false);
+        employees_table->setCornerButtonEnabled(false);
+        employees_table->horizontalHeader()->setCascadingSectionResizes(false);
+        employees_table->horizontalHeader()->setDefaultSectionSize(196);
+        employees_table->horizontalHeader()->setHighlightSections(false);
+        employees_table->horizontalHeader()->setMinimumSectionSize(196);
+        employees_table->horizontalHeader()->setProperty("showSortIndicator", QVariant(false));
+        employees_table->horizontalHeader()->setStretchLastSection(false);
+        employees_table->verticalHeader()->setVisible(false);
+        employees_table->verticalHeader()->setCascadingSectionResizes(false);
+        employees_table->verticalHeader()->setDefaultSectionSize(40);
+        employees_table->verticalHeader()->setHighlightSections(false);
+        employees_table->verticalHeader()->setMinimumSectionSize(40);
+        employees_table->verticalHeader()->setProperty("showSortIndicator", QVariant(false));
+        employees_table->verticalHeader()->setStretchLastSection(false);
+        groupBox_3 = new QGroupBox(list_emp);
+        groupBox_3->setObjectName(QStringLiteral("groupBox_3"));
+        groupBox_3->setGeometry(QRect(20, 10, 231, 31));
+        groupBox_3->setStyleSheet(QLatin1String("border : 1px solid #455266 ; \n"
+"border-radius : 6px ;"));
+        all_search_in_2 = new QLineEdit(groupBox_3);
+        all_search_in_2->setObjectName(QStringLiteral("all_search_in_2"));
+        all_search_in_2->setGeometry(QRect(9, 5, 191, 20));
+        all_search_in_2->setStyleSheet(QLatin1String("border : none ; \n"
+"background-color : white ; \n"
+"color : black ;  "));
+        all_search_in_2->setEchoMode(QLineEdit::Normal);
+        pushButton_2 = new QPushButton(groupBox_3);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(194, 4, 30, 23));
+        pushButton_2->setStyleSheet(QStringLiteral("border : none ; "));
+        pushButton_2->setIcon(icon11);
+        updateButton_emp = new QPushButton(list_emp);
+        updateButton_emp->setObjectName(QStringLiteral("updateButton_emp"));
+        updateButton_emp->setGeometry(QRect(520, 10, 30, 31));
+        updateButton_emp->setStyleSheet(QLatin1String("#updateButton_emp{\n"
+"background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 15px ;\n"
+"} \n"
+"#updateButton_emp:hover{\n"
+"background-color : #2c9cf6 ;\n"
+"border : 1px solid #2c9cf6 ; \n"
+"}"));
+        updateButton_emp->setIcon(icon12);
+        addButton_emp = new QPushButton(list_emp);
+        addButton_emp->setObjectName(QStringLiteral("addButton_emp"));
+        addButton_emp->setGeometry(QRect(310, 10, 30, 31));
+        addButton_emp->setStyleSheet(QLatin1String("#addButton_emp{\n"
+"background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 15px ;\n"
+"} \n"
+"#addButton_emp:hover{\n"
+"background-color : #2c9cf6 ;\n"
+"border : 1px solid #2c9cf6 ; \n"
+"}"));
+        addButton_emp->setIcon(icon13);
+        deleteButton_emp = new QPushButton(list_emp);
+        deleteButton_emp->setObjectName(QStringLiteral("deleteButton_emp"));
+        deleteButton_emp->setGeometry(QRect(560, 10, 30, 31));
+        deleteButton_emp->setStyleSheet(QLatin1String("#deleteButton_emp{\n"
+"background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 15px ;\n"
+"} \n"
+"#deleteButton_emp:hover{\n"
+"background-color : #2c9cf6 ;\n"
+"border : 1px solid #2c9cf6 ; \n"
+"}"));
+        deleteButton_emp->setIcon(icon14);
+        up_del_cin_in_emp = new QComboBox(list_emp);
+        up_del_cin_in_emp->setObjectName(QStringLiteral("up_del_cin_in_emp"));
+        up_del_cin_in_emp->setGeometry(QRect(350, 10, 161, 28));
+        up_del_cin_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+"padding : 5px; "));
+        download_dip = new QPushButton(list_emp);
+        download_dip->setObjectName(QStringLiteral("download_dip"));
+        download_dip->setGeometry(QRect(600, 10, 31, 31));
+        download_dip->setStyleSheet(QLatin1String("#download_dip{\n"
+"background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 15px ;\n"
+"} \n"
+"#download_dip:hover{\n"
+"background-color : #2c9cf6 ;\n"
+"border : 1px solid #2c9cf6 ; \n"
+"}"));
+        QIcon icon18;
+        icon18.addFile(QStringLiteral("../assets/icons/paperclip.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        download_dip->setIcon(icon18);
+        export_to_pdf_emp = new QPushButton(list_emp);
+        export_to_pdf_emp->setObjectName(QStringLiteral("export_to_pdf_emp"));
+        export_to_pdf_emp->setGeometry(QRect(1220, 9, 81, 40));
+        export_to_pdf_emp->setStyleSheet(QLatin1String("#export_to_pdf_emp{\n"
+"background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ;\n"
+"} \n"
+"#export_to_pdf_emp:hover{\n"
+"background-color : #2c9cf6 ;\n"
+"border : 1px solid #2c9cf6 ; \n"
+"}"));
+        export_to_pdf_emp->setIcon(icon10);
+        export_to_txt_emp = new QPushButton(list_emp);
+        export_to_txt_emp->setObjectName(QStringLiteral("export_to_txt_emp"));
+        export_to_txt_emp->setGeometry(QRect(1310, 8, 81, 41));
+        export_to_txt_emp->setStyleSheet(QLatin1String("#export_to_txt_emp{\n"
+"background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ;\n"
+"}\n"
+"#export_to_txt_emp:hover{\n"
+"background-color : #2c9cf6;\n"
+"border : 1px solid #2c9cf6 ; \n"
+"} "));
+        export_to_txt_emp->setIcon(icon10);
+        export_to_exel_emp = new QPushButton(list_emp);
+        export_to_exel_emp->setObjectName(QStringLiteral("export_to_exel_emp"));
+        export_to_exel_emp->setGeometry(QRect(1120, 10, 81, 40));
+        export_to_exel_emp->setStyleSheet(QLatin1String("#export_to_exel_emp{\n"
+"background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ;\n"
+"}\n"
+"#export_to_exel_emp:hover{\n"
+"background-color : #2c9cf6;\n"
+"border : 1px solid #2c9cf6 ; \n"
+"} "));
+        export_to_exel_emp->setIcon(icon10);
+        groupBox_17 = new QGroupBox(list_emp);
+        groupBox_17->setObjectName(QStringLiteral("groupBox_17"));
+        groupBox_17->setGeometry(QRect(250, 490, 191, 181));
+        groupBox_17->setStyleSheet(QLatin1String("background-color : #1B2028;\n"
+"border-radius: 10px;"));
+        label_52 = new QLabel(groupBox_17);
+        label_52->setObjectName(QStringLiteral("label_52"));
+        label_52->setGeometry(QRect(60, 10, 71, 71));
+        label_52->setStyleSheet(QStringLiteral("border : none "));
+        label_52->setPixmap(QPixmap(QString::fromUtf8("../assets/femme.png")));
+        label_52->setScaledContents(true);
+        label_56 = new QLabel(groupBox_17);
+        label_56->setObjectName(QStringLiteral("label_56"));
+        label_56->setGeometry(QRect(70, 90, 71, 31));
+        label_56->setStyleSheet(QLatin1String("font-size : 15px ; \n"
+"border : none ; "));
+        females_nbr_2 = new QLabel(groupBox_17);
+        females_nbr_2->setObjectName(QStringLiteral("females_nbr_2"));
+        females_nbr_2->setGeometry(QRect(40, 126, 111, 41));
+        females_nbr_2->setStyleSheet(QLatin1String("font-size : 40px ; \n"
+"border : none ;"));
+        females_nbr_2->setAlignment(Qt::AlignCenter);
+        groupBox_18 = new QGroupBox(list_emp);
+        groupBox_18->setObjectName(QStringLiteral("groupBox_18"));
+        groupBox_18->setGeometry(QRect(30, 490, 191, 181));
+        groupBox_18->setStyleSheet(QLatin1String("background-color : #2b61fe;  \n"
+"border-radius: 10px;"));
+        label_53 = new QLabel(groupBox_18);
+        label_53->setObjectName(QStringLiteral("label_53"));
+        label_53->setGeometry(QRect(60, 10, 71, 71));
+        label_53->setStyleSheet(QStringLiteral("border : none ;"));
+        label_53->setPixmap(QPixmap(QString::fromUtf8("../assets/homme.png")));
+        label_53->setScaledContents(true);
+        label_54 = new QLabel(groupBox_18);
+        label_54->setObjectName(QStringLiteral("label_54"));
+        label_54->setGeometry(QRect(75, 90, 71, 31));
+        label_54->setStyleSheet(QLatin1String("font-size : 15px ; \n"
+"border : none ;"));
+        males_nbr_2 = new QLabel(groupBox_18);
+        males_nbr_2->setObjectName(QStringLiteral("males_nbr_2"));
+        males_nbr_2->setGeometry(QRect(47, 125, 101, 41));
+        males_nbr_2->setLayoutDirection(Qt::LeftToRight);
+        males_nbr_2->setStyleSheet(QLatin1String("font-size : 40px ; \n"
+"border : none ;"));
+        males_nbr_2->setAlignment(Qt::AlignCenter);
+        refresh_2 = new QPushButton(list_emp);
+        refresh_2->setObjectName(QStringLiteral("refresh_2"));
+        refresh_2->setGeometry(QRect(270, 10, 31, 31));
+        refresh_2->setStyleSheet(QLatin1String("#refresh_2{\n"
+"background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 15px ;\n"
+"} \n"
+"#refresh_2:hover{\n"
+"background-color : #2c9cf6 ;\n"
+"border : 1px solid #2c9cf6 ; \n"
+"}"));
+        QIcon icon19;
+        icon19.addFile(QStringLiteral("../assets/icons/refresh-cw.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        refresh_2->setIcon(icon19);
+        sort_filter_2 = new QComboBox(list_emp);
+        sort_filter_2->setObjectName(QStringLiteral("sort_filter_2"));
+        sort_filter_2->setGeometry(QRect(830, 10, 171, 30));
+        sort_filter_2->setStyleSheet(QLatin1String("background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 6px;\n"
+"padding-left:5px; "));
+        gender_filter_emp = new QComboBox(list_emp);
+        gender_filter_emp->setObjectName(QStringLiteral("gender_filter_emp"));
+        gender_filter_emp->setGeometry(QRect(650, 10, 171, 30));
+        gender_filter_emp->setLayoutDirection(Qt::LeftToRight);
+        gender_filter_emp->setStyleSheet(QLatin1String("background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 6px;\n"
+"padding-left:5px; "));
+        asc_2 = new QRadioButton(list_emp);
+        asc_2->setObjectName(QStringLiteral("asc_2"));
+        asc_2->setGeometry(QRect(1011, 20, 41, 20));
+        asc_2->setStyleSheet(QStringLiteral(""));
+        QIcon icon20;
+        icon20.addFile(QStringLiteral("../assets/icons/arrow-up.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        asc_2->setIcon(icon20);
+        dsc_2 = new QRadioButton(list_emp);
+        dsc_2->setObjectName(QStringLiteral("dsc_2"));
+        dsc_2->setGeometry(QRect(1050, 20, 40, 20));
+        QIcon icon21;
+        icon21.addFile(QStringLiteral("../assets/icons/arrow-down.svg"), QSize(), QIcon::Normal, QIcon::Off);
+        dsc_2->setIcon(icon21);
+        employer_operations->addWidget(list_emp);
+        add_emp = new QWidget();
+        add_emp->setObjectName(QStringLiteral("add_emp"));
+        label_40 = new QLabel(add_emp);
+        label_40->setObjectName(QStringLiteral("label_40"));
+        label_40->setGeometry(QRect(710, 120, 641, 621));
+        label_40->setPixmap(QPixmap(QString::fromUtf8("../assets/clients.png")));
+        label_40->setScaledContents(true);
+        groupBox_11 = new QGroupBox(add_emp);
+        groupBox_11->setObjectName(QStringLiteral("groupBox_11"));
+        groupBox_11->setGeometry(QRect(120, 110, 471, 631));
+        groupBox_11->setStyleSheet(QLatin1String("#groupBox_11{\n"
+"border : 2px solid #455266 ; \n"
+"border-radius: 5px;\n"
+"}"));
+        add_val_emp = new QPushButton(groupBox_11);
+        add_val_emp->setObjectName(QStringLiteral("add_val_emp"));
+        add_val_emp->setGeometry(QRect(70, 540, 311, 31));
+        add_val_emp->setStyleSheet(QLatin1String("#add_val_emp{\n"
+"background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ;\n"
+"}\n"
+"#add_val_emp:hover{\n"
+"background-color : #2c9cf6;\n"
+"border : 1px solid #2c9cf6; \n"
+"} "));
+        add_val_emp->setIcon(icon15);
+        cin_in_emp = new QLineEdit(groupBox_11);
+        cin_in_emp->setObjectName(QStringLiteral("cin_in_emp"));
+        cin_in_emp->setGeometry(QRect(100, 60, 121, 31));
+        cin_in_emp->setStyleSheet(QLatin1String("color : black ;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        gender_in_emp = new QComboBox(groupBox_11);
+        gender_in_emp->setObjectName(QStringLiteral("gender_in_emp"));
+        gender_in_emp->setGeometry(QRect(100, 230, 271, 31));
+        gender_in_emp->setStyleSheet(QLatin1String("color : black ;  \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+"padding : 5px; "));
+        email_in_emp = new QLineEdit(groupBox_11);
+        email_in_emp->setObjectName(QStringLiteral("email_in_emp"));
+        email_in_emp->setGeometry(QRect(100, 330, 271, 31));
+        email_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        diplome_import = new QPushButton(groupBox_11);
+        diplome_import->setObjectName(QStringLiteral("diplome_import"));
+        diplome_import->setGeometry(QRect(160, 500, 131, 22));
+        diplome_import->setStyleSheet(QLatin1String("#diplome_import{\n"
+"background-color : #2A313D;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 11px ;\n"
+"} \n"
+"#diplome_import:hover{\n"
+"background-color : #2c9cf6;\n"
+"border : 1px solid #2c9cf6; \n"
+"} "));
+        lastname_in_emp = new QLineEdit(groupBox_11);
+        lastname_in_emp->setObjectName(QStringLiteral("lastname_in_emp"));
+        lastname_in_emp->setGeometry(QRect(240, 120, 131, 31));
+        lastname_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        phone_in_emp = new QLineEdit(groupBox_11);
+        phone_in_emp->setObjectName(QStringLiteral("phone_in_emp"));
+        phone_in_emp->setGeometry(QRect(100, 280, 271, 31));
+        phone_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        firstname_in_emp = new QLineEdit(groupBox_11);
+        firstname_in_emp->setObjectName(QStringLiteral("firstname_in_emp"));
+        firstname_in_emp->setGeometry(QRect(100, 120, 121, 31));
+        firstname_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        function_in_emp = new QLineEdit(groupBox_11);
+        function_in_emp->setObjectName(QStringLiteral("function_in_emp"));
+        function_in_emp->setGeometry(QRect(100, 380, 121, 31));
+        function_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        password_in_emp = new QLineEdit(groupBox_11);
+        password_in_emp->setObjectName(QStringLiteral("password_in_emp"));
+        password_in_emp->setGeometry(QRect(240, 60, 131, 31));
+        password_in_emp->setStyleSheet(QLatin1String("color : black ;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        salaire_in_emp = new QLineEdit(groupBox_11);
+        salaire_in_emp->setObjectName(QStringLiteral("salaire_in_emp"));
+        salaire_in_emp->setGeometry(QRect(240, 380, 131, 31));
+        salaire_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        SecretQuestion = new QLabel(groupBox_11);
+        SecretQuestion->setObjectName(QStringLiteral("SecretQuestion"));
+        SecretQuestion->setGeometry(QRect(100, 420, 271, 21));
+        SecretQuestion->setStyleSheet(QLatin1String("font: 75 8pt \"MS Shell Dlg 2\";\n"
+"color: rgb(0, 0, 0);"));
+        secret_in_emp = new QLineEdit(groupBox_11);
+        secret_in_emp->setObjectName(QStringLiteral("secret_in_emp"));
+        secret_in_emp->setGeometry(QRect(100, 450, 271, 31));
+        secret_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        date_in_emp = new QDateEdit(groupBox_11);
+        date_in_emp->setObjectName(QStringLiteral("date_in_emp"));
+        date_in_emp->setGeometry(QRect(100, 180, 271, 31));
+        date_in_emp->setStyleSheet(QStringLiteral("color: rgb(0, 0, 0);"));
+        label_59 = new QLabel(add_emp);
+        label_59->setObjectName(QStringLiteral("label_59"));
+        label_59->setGeometry(QRect(220, 70, 281, 61));
+        label_59->setStyleSheet(QLatin1String("color : #1B2028 ; \n"
+"font-size : 40px ; "));
+        label_59->setAlignment(Qt::AlignCenter);
+        backtolist_emp = new QPushButton(add_emp);
+        backtolist_emp->setObjectName(QStringLiteral("backtolist_emp"));
+        backtolist_emp->setGeometry(QRect(30, 30, 41, 41));
+        backtolist_emp->setStyleSheet(QLatin1String("#backtolist_emp{\n"
+"border-radius : 20px;\n"
+"}\n"
+"#backtolist_emp:hover{\n"
+"background-color : #2c9cf6;\n"
+"} "));
+        backtolist_emp->setIcon(icon16);
+        backtolist_emp->setIconSize(QSize(30, 30));
+        employer_operations->addWidget(add_emp);
+        update_emp = new QWidget();
+        update_emp->setObjectName(QStringLiteral("update_emp"));
+        groupBox_12 = new QGroupBox(update_emp);
+        groupBox_12->setObjectName(QStringLiteral("groupBox_12"));
+        groupBox_12->setGeometry(QRect(120, 110, 471, 631));
+        groupBox_12->setStyleSheet(QLatin1String("#groupBox_10{\n"
+"border : 2px solid #455266 ; \n"
+"border-radius: 5px;\n"
+"}"));
+        update_val_emp = new QPushButton(groupBox_12);
+        update_val_emp->setObjectName(QStringLiteral("update_val_emp"));
+        update_val_emp->setGeometry(QRect(90, 560, 311, 31));
+        update_val_emp->setStyleSheet(QLatin1String("#update_val_emp{\n"
+"background-color : #1B2028;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ;\n"
+"}\n"
+"#update_val_emp:hover{\n"
+"background-color : #2c9cf6;\n"
+"border : 1px solid #2c9cf6; \n"
+"} "));
+        update_val_emp->setIcon(icon17);
+        up_gender_in_emp = new QComboBox(groupBox_12);
+        up_gender_in_emp->setObjectName(QStringLiteral("up_gender_in_emp"));
+        up_gender_in_emp->setGeometry(QRect(110, 270, 261, 31));
+        up_gender_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+"padding : 5px; "));
+        up_email_in_emp = new QLineEdit(groupBox_12);
+        up_email_in_emp->setObjectName(QStringLiteral("up_email_in_emp"));
+        up_email_in_emp->setGeometry(QRect(110, 390, 261, 31));
+        up_email_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        up_importFileButton_emp = new QPushButton(groupBox_12);
+        up_importFileButton_emp->setObjectName(QStringLiteral("up_importFileButton_emp"));
+        up_importFileButton_emp->setGeometry(QRect(180, 510, 121, 22));
+        up_importFileButton_emp->setStyleSheet(QLatin1String("#up_importFileButton_emp{\n"
+"background-color : #2A313D;\n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 11px ;\n"
+"} \n"
+"#up_importFileButton_emp:hover{\n"
+"background-color : #2c9cf6;\n"
+"border : 1px solid #2c9cf6; \n"
+"} "));
+        up_phone_in_emp = new QLineEdit(groupBox_12);
+        up_phone_in_emp->setObjectName(QStringLiteral("up_phone_in_emp"));
+        up_phone_in_emp->setGeometry(QRect(110, 190, 121, 31));
+        up_phone_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        up_first_name_in_emp = new QLineEdit(groupBox_12);
+        up_first_name_in_emp->setObjectName(QStringLiteral("up_first_name_in_emp"));
+        up_first_name_in_emp->setGeometry(QRect(110, 130, 121, 31));
+        up_first_name_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        phone_error_4 = new QLabel(groupBox_12);
+        phone_error_4->setObjectName(QStringLiteral("phone_error_4"));
+        phone_error_4->setGeometry(QRect(110, 230, 121, 31));
+        phone_error_4->setStyleSheet(QStringLiteral("color : red ; "));
+        up_cin_in_emp = new QLineEdit(groupBox_12);
+        up_cin_in_emp->setObjectName(QStringLiteral("up_cin_in_emp"));
+        up_cin_in_emp->setGeometry(QRect(108, 70, 261, 31));
+        up_cin_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        up_cin_in_emp->setReadOnly(true);
+        up_salaire_in_emp = new QLineEdit(groupBox_12);
+        up_salaire_in_emp->setObjectName(QStringLiteral("up_salaire_in_emp"));
+        up_salaire_in_emp->setGeometry(QRect(110, 330, 121, 31));
+        up_salaire_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        up_fonction_in_emp = new QLineEdit(groupBox_12);
+        up_fonction_in_emp->setObjectName(QStringLiteral("up_fonction_in_emp"));
+        up_fonction_in_emp->setGeometry(QRect(250, 330, 121, 31));
+        up_fonction_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        up_last_name_in_emp = new QLineEdit(groupBox_12);
+        up_last_name_in_emp->setObjectName(QStringLiteral("up_last_name_in_emp"));
+        up_last_name_in_emp->setGeometry(QRect(252, 130, 121, 31));
+        up_last_name_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        up_diplom_in_emp = new QLineEdit(groupBox_12);
+        up_diplom_in_emp->setObjectName(QStringLiteral("up_diplom_in_emp"));
+        up_diplom_in_emp->setGeometry(QRect(110, 460, 261, 31));
+        up_diplom_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        up_date_in_emp = new QDateEdit(groupBox_12);
+        up_date_in_emp->setObjectName(QStringLiteral("up_date_in_emp"));
+        up_date_in_emp->setGeometry(QRect(250, 190, 121, 31));
+        up_date_in_emp->setStyleSheet(QLatin1String("color : black ; \n"
+"border : 1px solid #455266 ; \n"
+"border-radius : 5px ; \n"
+""));
+        label_41 = new QLabel(update_emp);
+        label_41->setObjectName(QStringLiteral("label_41"));
+        label_41->setGeometry(QRect(230, 70, 261, 61));
+        label_41->setStyleSheet(QLatin1String("color : #1B2028 ; \n"
+"font-size : 40px ; "));
+        label_41->setAlignment(Qt::AlignCenter);
+        backtolist_emp4 = new QPushButton(update_emp);
+        backtolist_emp4->setObjectName(QStringLiteral("backtolist_emp4"));
+        backtolist_emp4->setGeometry(QRect(30, 30, 41, 41));
+        backtolist_emp4->setStyleSheet(QLatin1String("#backtolist_emp4{\n"
+"border-radius : 20px;\n"
+"}\n"
+"#backtolist_emp4:hover{\n"
+"background-color : #2c9cf6;\n"
+"} "));
+        backtolist_emp4->setIcon(icon16);
+        backtolist_emp4->setIconSize(QSize(30, 30));
+        label_17 = new QLabel(update_emp);
+        label_17->setObjectName(QStringLiteral("label_17"));
+        label_17->setGeometry(QRect(630, 110, 851, 671));
+        label_17->setPixmap(QPixmap(QString::fromUtf8("../assets/delete-client.png")));
+        label_17->setScaledContents(true);
+        employer_operations->addWidget(update_emp);
+        groupBox_7 = new QGroupBox(employees_page);
+        groupBox_7->setObjectName(QStringLiteral("groupBox_7"));
+        groupBox_7->setGeometry(QRect(170, 10, 1421, 61));
+        groupBox_7->setStyleSheet(QLatin1String("background-color : white ;\n"
+"border-radius : 5px ; "));
+        lineEdit_3 = new QLineEdit(groupBox_7);
+        lineEdit_3->setObjectName(QStringLiteral("lineEdit_3"));
+        lineEdit_3->setGeometry(QRect(20, 10, 41, 41));
+        lineEdit_3->setStyleSheet(QLatin1String("background-color : grey ; \n"
+"border-radius : 20px ; "));
+        lineEdit_4 = new QLineEdit(groupBox_7);
+        lineEdit_4->setObjectName(QStringLiteral("lineEdit_4"));
+        lineEdit_4->setGeometry(QRect(75, 21, 71, 20));
+        lineEdit_4->setStyleSheet(QLatin1String("color : black ; \n"
+"font-size : 15px;"));
         stackedWidget->addWidget(employees_page);
         appointments_page = new QWidget();
         appointments_page->setObjectName(QStringLiteral("appointments_page"));
@@ -2015,6 +2689,7 @@ public:
         retranslateUi(MainWindow);
 
         stackedWidget->setCurrentIndex(2);
+        employer_operations->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -2026,7 +2701,7 @@ public:
         label_21->setText(QApplication::translate("MainWindow", "Here you can login", Q_NULLPTR));
         loginButton->setText(QApplication::translate("MainWindow", "LOGIN", Q_NULLPTR));
         quitButton->setText(QString());
-        label_24->setText(QApplication::translate("MainWindow", "let's join us :)", Q_NULLPTR));
+        label_24->setText(QApplication::translate("MainWindow", "Join us :)", Q_NULLPTR));
         label_25->setText(QApplication::translate("MainWindow", "Email or CIN", Q_NULLPTR));
         label_26->setText(QApplication::translate("MainWindow", "Password", Q_NULLPTR));
         label_28->setText(QApplication::translate("MainWindow", "Who are you ? ", Q_NULLPTR));
@@ -2049,13 +2724,16 @@ public:
         label_2->setText(QString());
         home_2->setText(QApplication::translate("MainWindow", "  HOME", Q_NULLPTR));
         clients_2->setText(QApplication::translate("MainWindow", "  PATIENTS", Q_NULLPTR));
-        employees_2->setText(QApplication::translate("MainWindow", "  PHYSIOTHERAPIES", Q_NULLPTR));
+        employees_2->setText(QApplication::translate("MainWindow", "  EMPLOYEES", Q_NULLPTR));
         appointements_2->setText(QApplication::translate("MainWindow", "  APPOINTMENTS", Q_NULLPTR));
         treatments_2->setText(QApplication::translate("MainWindow", "  TREATMENTS", Q_NULLPTR));
         stock_2->setText(QApplication::translate("MainWindow", "  EQUIPMENT", Q_NULLPTR));
         settings_2->setText(QApplication::translate("MainWindow", "  SETTINGS", Q_NULLPTR));
         about_us_2->setText(QApplication::translate("MainWindow", "  ABOUT US", Q_NULLPTR));
         logout_2->setText(QApplication::translate("MainWindow", "  LOG OUT", Q_NULLPTR));
+        export_to_txt->setText(QApplication::translate("MainWindow", "TXT", Q_NULLPTR));
+        export_to_pdf->setText(QApplication::translate("MainWindow", "PDF", Q_NULLPTR));
+        export_to_exel->setText(QApplication::translate("MainWindow", "EXCEL", Q_NULLPTR));
         groupBox_2->setTitle(QString());
         all_search_in->setPlaceholderText(QApplication::translate("MainWindow", "search by id , name or first name ", Q_NULLPTR));
         pushButton->setText(QString());
@@ -2088,16 +2766,68 @@ public:
         backtolist_2->setText(QString());
         label_16->setText(QString());
         groupBox_6->setTitle(QString());
+        lineEdit_2->setText(QApplication::translate("MainWindow", "Patient", Q_NULLPTR));
         label_3->setText(QString());
         home_3->setText(QApplication::translate("MainWindow", "  HOME", Q_NULLPTR));
         clients_3->setText(QApplication::translate("MainWindow", "  PATIENTS", Q_NULLPTR));
-        employees_3->setText(QApplication::translate("MainWindow", "  PHYSIOTHERAPIES", Q_NULLPTR));
+        employees_3->setText(QApplication::translate("MainWindow", "  EMPLOYEES", Q_NULLPTR));
         appointements_3->setText(QApplication::translate("MainWindow", "  APPOINTMENTS", Q_NULLPTR));
         treatments_3->setText(QApplication::translate("MainWindow", "  TREATMENTS", Q_NULLPTR));
         stock_3->setText(QApplication::translate("MainWindow", "  EQUIPMENT", Q_NULLPTR));
         settings_3->setText(QApplication::translate("MainWindow", "  SETTINGS", Q_NULLPTR));
         about_us_3->setText(QApplication::translate("MainWindow", "  ABOUT US", Q_NULLPTR));
         logout_3->setText(QApplication::translate("MainWindow", "  LOG OUT", Q_NULLPTR));
+        groupBox_3->setTitle(QString());
+        all_search_in_2->setPlaceholderText(QApplication::translate("MainWindow", "search by id , name or first name ", Q_NULLPTR));
+        pushButton_2->setText(QString());
+        updateButton_emp->setText(QString());
+        addButton_emp->setText(QString());
+        deleteButton_emp->setText(QString());
+        download_dip->setText(QString());
+        export_to_pdf_emp->setText(QApplication::translate("MainWindow", "PDF", Q_NULLPTR));
+        export_to_txt_emp->setText(QApplication::translate("MainWindow", "TXT", Q_NULLPTR));
+        export_to_exel_emp->setText(QApplication::translate("MainWindow", "EXCEL", Q_NULLPTR));
+        groupBox_17->setTitle(QString());
+        label_52->setText(QString());
+        label_56->setText(QApplication::translate("MainWindow", "Females : ", Q_NULLPTR));
+        females_nbr_2->setText(QApplication::translate("MainWindow", "43", Q_NULLPTR));
+        groupBox_18->setTitle(QString());
+        label_53->setText(QString());
+        label_54->setText(QApplication::translate("MainWindow", "Males : ", Q_NULLPTR));
+        males_nbr_2->setText(QApplication::translate("MainWindow", "100", Q_NULLPTR));
+        refresh_2->setText(QString());
+        asc_2->setText(QString());
+        dsc_2->setText(QString());
+        label_40->setText(QString());
+        groupBox_11->setTitle(QString());
+        add_val_emp->setText(QApplication::translate("MainWindow", "INSERT", Q_NULLPTR));
+        cin_in_emp->setPlaceholderText(QApplication::translate("MainWindow", "cin", Q_NULLPTR));
+        gender_in_emp->clear();
+        gender_in_emp->insertItems(0, QStringList()
+         << QApplication::translate("MainWindow", "Homme", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "Femme", Q_NULLPTR)
+        );
+        email_in_emp->setPlaceholderText(QApplication::translate("MainWindow", "email ", Q_NULLPTR));
+        diplome_import->setText(QApplication::translate("MainWindow", "diplome", Q_NULLPTR));
+        lastname_in_emp->setPlaceholderText(QApplication::translate("MainWindow", "lastname", Q_NULLPTR));
+        phone_in_emp->setPlaceholderText(QApplication::translate("MainWindow", "phone number ", Q_NULLPTR));
+        firstname_in_emp->setPlaceholderText(QApplication::translate("MainWindow", "first name ", Q_NULLPTR));
+        function_in_emp->setPlaceholderText(QApplication::translate("MainWindow", "function", Q_NULLPTR));
+        password_in_emp->setPlaceholderText(QApplication::translate("MainWindow", "password", Q_NULLPTR));
+        salaire_in_emp->setPlaceholderText(QApplication::translate("MainWindow", "salary", Q_NULLPTR));
+        SecretQuestion->setText(QApplication::translate("MainWindow", "What is your pet's name ? :", Q_NULLPTR));
+        secret_in_emp->setPlaceholderText(QApplication::translate("MainWindow", "Secret persenal word", Q_NULLPTR));
+        label_59->setText(QApplication::translate("MainWindow", "Employer Infos ", Q_NULLPTR));
+        backtolist_emp->setText(QString());
+        groupBox_12->setTitle(QString());
+        update_val_emp->setText(QApplication::translate("MainWindow", "UPDATE", Q_NULLPTR));
+        up_importFileButton_emp->setText(QApplication::translate("MainWindow", "import", Q_NULLPTR));
+        phone_error_4->setText(QString());
+        label_41->setText(QApplication::translate("MainWindow", "Update Form", Q_NULLPTR));
+        backtolist_emp4->setText(QString());
+        label_17->setText(QString());
+        groupBox_7->setTitle(QString());
+        lineEdit_4->setText(QApplication::translate("MainWindow", "Employee", Q_NULLPTR));
         label_23->setText(QString());
         home_4->setText(QApplication::translate("MainWindow", "  HOME", Q_NULLPTR));
         clients_4->setText(QApplication::translate("MainWindow", "  PATIENTS", Q_NULLPTR));

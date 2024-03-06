@@ -19,13 +19,9 @@
 #include <QPainter>
 #include <QPdfWriter>
 #include <QMessageBox>
-#include<QtCharts>
-#include<QChartView>
-#include<QBarSet>
-#include<QBarSeries>
-#include<QPieSeries>
-#include<QLineSeries>
-class client 
+#include <QDate>
+
+class client
 {
 private :
    QString cin;
@@ -68,6 +64,17 @@ QSqlQueryModel * display_all_clients();
 bool add_client();
 bool delete_client(QString cin);
 bool update_client(QString CIN , QString firstName , QString name ,QString dob,QString gender,QString phoneNumber , QString email);
+
+
+/*les fonction */
+QSqlQueryModel * search_client_by_gender(QString gender);
+QSqlQueryModel * search_client_by_all(QString searchValue);
+
+void exportModelToPdf(QAbstractItemModel* model, const QString &fileName);
+
+void exportToFile(const QString &data, const QString &filename);
+void exportToCsv(QSqlQueryModel *model, const QString &filename);
+void exportToTxt(QSqlQueryModel *model, const QString &filename);
 
 };
 

@@ -6,7 +6,6 @@
 #include<QApplication>
 #include<iostream>
 #include"client.h"
-
 #include"connexion.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -24,8 +23,6 @@ public:
 private slots:
 
     /*login page*/
-
-    void on_loginButton_clicked();
 
     void on_quitButton_clicked();
 
@@ -175,7 +172,31 @@ private slots:
 
     void on_logout_8_clicked();
 
+    /*client operations*/
 
+    void on_add_val_clicked();
+
+    void on_update_val_clicked();
+
+    void on_importFileButton_clicked();
+
+    //void on_certificate_select_clicked();
+
+    void on_export_to_pdf_clicked();
+
+    void on_export_to_exel_clicked();
+
+    void on_export_to_txt_clicked();
+
+    void on_up_importFileButton_clicked();
+
+    void on_refresh_clicked();
+
+    void on_all_search_in_textChanged();
+
+    void on_gender_filter_activated();
+
+    void on_sort_filter_activated();
 
     void on_addButton_clicked();
 
@@ -186,14 +207,34 @@ private slots:
     void on_backtolist_2_clicked();
 
     void on_deleteButton_clicked();
- void on_add_val_clicked();
 
- void on_update_val_clicked();
+    void on_download_cer_clicked();
+
+    void on_add_val_emp_clicked();
+
+    void on_addButton_emp_clicked();
+
+    void on_backtolist_emp_clicked();
+
+    void on_updateButton_emp_clicked();
+
+    void on_backtolist_4_clicked();
+
+    void on_deleteButton_emp_clicked();
+
+    void on_export_to_exel_emp_clicked();
+
+    void on_export_to_pdf_emp_clicked();
+
+    void on_export_to_txt_emp_clicked();
+
+    void on_update_val_emp_clicked();
+
+    void on_backtolist_emp4_clicked();
 
 private:
     Ui::MainWindow *ui;
     client myclient;
-
     connexion c;
     QMessageBox myBox ;
 

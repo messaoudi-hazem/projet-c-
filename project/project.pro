@@ -25,7 +25,8 @@ SOURCES += \
 HEADERS += \
     client.h \
     connexion.h \
-    mainwindow.h
+    mainwindow.h \
+    treatment.h
 
 FORMS += \
     mainwindow.ui

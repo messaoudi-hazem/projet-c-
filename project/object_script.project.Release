@@ -1,0 +1,12 @@
+INPUT(
+./release\client.o
+./release\connexion.o
+./release\dialog.o
+./release\employe.o
+./release\main.o
+./release\mainwindow.o
+./release\treatment.o
+./release\qrc_ressources.o
+./release\moc_dialog.o
+./release\moc_mainwindow.o
+);

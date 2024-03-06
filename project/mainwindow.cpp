@@ -6,7 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
 
     ui->setupUi(this);
-    ui->stackedWidget->setCurrentWidget(ui->home_page);
+    ui->stackedWidget->setCurrentWidget(ui->clients);
     qDebug() << QSqlDatabase::drivers();
     QIntValidator* cinValidator = new QIntValidator(0, 99999999, this);
     myBox.setStyleSheet("QMessageBox{"
@@ -32,6 +32,7 @@ MainWindow::MainWindow(QWidget *parent)
     if (c.check_data_base()) {
             ui->clients_table->setModel(myclient.display_all_clients());
             ui->up_del_cin_in->setModel(myclient.display_all_clients());
+
     } else {
         qDebug() << "db is not open.";
     }
@@ -294,11 +295,6 @@ void MainWindow::on_treatments_6_clicked()
     ui->stackedWidget->setCurrentWidget(ui->treatments_page);
 }
 
-void MainWindow::on_quitButton_clicked()
-{
-    delete ui;
-
-}
 void MainWindow::on_stock_6_clicked()
 {
     ui->stackedWidget->setCurrentWidget(ui->stock_page);
@@ -314,10 +310,6 @@ void MainWindow::on_about_us_6_clicked()
     ui->stackedWidget->setCurrentWidget(ui->about_us_page);
 }
 
-void MainWindow::on_loginButton_clicked()
-{
-    ui->stackedWidget->setCurrentWidget(ui->login_page);
-}
 void MainWindow::on_logout_6_clicked()
 {
     ui->stackedWidget->setCurrentWidget(ui->login_page);
@@ -416,6 +408,10 @@ void MainWindow::on_logout_8_clicked()
 }
 
 
+void MainWindow::on_quitButton_clicked()
+{
+    QCoreApplication::quit();
+}
 void MainWindow::on_add_val_clicked()
 {
     myclient.setCin(ui->cin_in->text());
@@ -431,9 +427,11 @@ void MainWindow::on_add_val_clicked()
         ui->phone_error->setText("");
         if(myclient.add_client()){
             ui->clients_table->setModel(myclient.display_all_clients());
+
             ui->clients_table->setModel(myclient.display_all_clients());
             ui->up_del_cin_in->setModel(myclient.display_all_clients());
             ui->patient_operations->setCurrentWidget(ui->list);
+
             myBox.information(this, "Client Added", QString(myclient.getFirstName() + " added to clients table"));
             ui->cin_in->clear();
             ui->name_in->clear();
@@ -468,7 +466,45 @@ void MainWindow::on_update_val_clicked()
         ui->clients_table->setModel(myclient.display_all_clients());
         ui->up_del_cin_in->setModel(myclient.display_all_clients());
         ui->patient_operations->setCurrentWidget(ui->list);
+
         myBox.information(this, "Client Updated", QString("the infos of client : " + up_cin_in + " are updated"));
+    }
+}
+
+void MainWindow::on_export_to_pdf_clicked()
+{
+    QString fileName = QFileDialog::getSaveFileName(nullptr, "Save PDF", "", "PDF Files (*.pdf);;All Files (*)");
+           if (!fileName.isEmpty()) {
+               myclient.exportModelToPdf(myclient.display_all_clients(), fileName);
+           }
+}
+
+void MainWindow::on_export_to_exel_clicked()
+{
+    QString csvFileName = QFileDialog::getSaveFileName(nullptr, "Save CSV", "", "CSV Files (*.csv);;All Files (*)");
+        if (!csvFileName.isEmpty()) {
+            myclient.exportToCsv(myclient.display_all_clients(), csvFileName);
+        }
+}
+void MainWindow::on_export_to_txt_clicked()
+{
+    QString txtFileName = QFileDialog::getSaveFileName(nullptr, "Save txt", "", "TXT Files (*.txt);;All Files (*)");
+        if (!txtFileName.isEmpty()) {
+            myclient.exportToTxt(myclient.display_all_clients(),txtFileName);
+        }
+}
+
+
+void MainWindow::on_all_search_in_textChanged()
+{
+    QString searchValue = ui->all_search_in->text();
+    if(myclient.search_client_by_all(searchValue) == NULL){
+        ui->clients_table->setModel(myclient.display_all_clients());
+        ui->up_del_cin_in->setModel(myclient.display_all_clients());
+    }
+    else {
+       ui->clients_table->setModel(myclient.search_client_by_all(searchValue));
+       ui->up_del_cin_in->setModel(myclient.search_client_by_all(searchValue));
     }
 }
 
@@ -512,8 +548,11 @@ void MainWindow::on_deleteButton_clicked()
     if(myclient.delete_client(del_cin)){
                 ui->clients_table->setModel(myclient.display_all_clients());
                 ui->up_del_cin_in->setModel(myclient.display_all_clients());
+
                 myBox.information(this, "Client Deleted", QString(" The client : " + del_cin + " is deleted"));
             } else {
                 qDebug() << "database is not open";
             }
 }
+
+
