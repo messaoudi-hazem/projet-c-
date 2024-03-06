@@ -391,7 +391,6 @@ void MainWindow::on_add_val_clicked()
         ui->phone_error->setText("");
         if(myclient.add_client()){
             ui->clients_table->setModel(myclient.display_all_clients());
-
             ui->clients_table->setModel(myclient.display_all_clients());
             ui->up_del_cin_in->setModel(myclient.display_all_clients());
             ui->patient_operations->setCurrentWidget(ui->list);

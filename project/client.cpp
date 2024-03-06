@@ -117,17 +117,15 @@ bool client::add_client() {
     query.bindValue(8, joinDate);
     return query.exec();
 }
-/*DELETE*/
+
 bool client::delete_client(QString cin) {
     QSqlQuery query;
     query.prepare("DELETE FROM CLIENTS WHERE CIN = :cin");
     query.bindValue(0, cin);
     if (query.exec()) {
-         // check the number of affected rows
         int numRowsAffected = query.numRowsAffected();
 
         if (numRowsAffected > 0) {
-            // deletion successful
             qDebug() << "Client with CIN" << cin << "deleted successfully";
             return true;
         } else {
@@ -141,7 +139,7 @@ bool client::delete_client(QString cin) {
         return false;
     }
 }
-/*UPDATE*/
+
 bool client::update_client(QString CIN , QString firstName , QString name ,QString dob,QString gender,QString phoneNumber ,QString email) {
     QSqlQuery query;
     query.prepare("UPDATE CLIENTS SET FIRSTNAME = :firstName, NAME = :name, DOB = :dob, GENDER = :gender, PHONE = :phoneNumber, EMAIL = :email, CERTIFICATE = :certificate  WHERE CIN = :cin");
@@ -165,7 +163,6 @@ QSqlQueryModel *client::search_client_by_all(QString searchValue) {
     query.prepare("SELECT CIN, FIRSTNAME ,NAME ,DOB ,GENDER ,PHONE ,EMAIL FROM CLIENTS WHERE CIN LIKE :searchValue OR NAME LIKE :searchValue OR FIRSTNAME LIKE :searchValue OR PHONE like :searchValue OR EMAIL like :searchValue");
     query.bindValue(":searchValue", "%" + searchValue + "%");
     if (!query.exec()) {
-        //qDebug() << "Query execution error:" << query.lastError().text();
         delete model;
         return nullptr;
     }
